@@ -150,6 +150,7 @@ class Pair extends Component {
               <TradingViewWidget
                 symbol={tradingViewCode}
                 theme={Themes.LIGHT}
+                timezone="Asia/Bangkok"
                 locale="en"
                 autosize
               />

@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import { Card, CardBody, CardHeader, Col, Table } from "reactstrap";
 import isEmpty from "../../helpers/is-empty";
-import unixTime from "../../helpers/time";
+//import unixTime from "../../helpers/time";
+import localTime from "../../helpers/localtime";
 import SpinnerSquare from "../Spinners/SpinnerSquare";
 
 import "spinkit/css/spinkit.css";
 
 function DataListRow(props) {
   const data = props.data;
-  let date = unixTime(data.time);
+  let date = localTime(data.time);
   let buy = "";
   let sell = "";
   let limit = "";

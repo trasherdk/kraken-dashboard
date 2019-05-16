@@ -15,6 +15,6 @@ app.use("/api/publicMarketData", publicMarketData);
 app.use("/api/privateUserData", privateUserData);
 app.use("/api/privateUserTrading", privateUserTrading);
 
-const port = process.env.PORT || 5000;
-
-app.listen(port, () => console.log(`server running on port ${port}`));
+const port = parseInt(process.env.PORT, 10) || 5000;
+const ipaddr=process.env.IP_ADDRESS || "0.0.0.0"
+app.listen(port, ipaddr, () => console.log(`server running on ${ipaddr} port ${port}`));

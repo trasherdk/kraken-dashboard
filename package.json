@@ -7,7 +7,7 @@
     "start": "node app.js",
     "dev": "nodemon app.js",
     "client": "npm start --prefix client",
-    "react": "concurrently \"npm start\" \"npm run client\""
+    "react": "concurrently \"X_IP_ADDRESS=192.168.1.70 PORT=5000 npm start\" \"PORT=5001 npm run client\""
   },
   "author": "Miguel Medeiros",
   "license": "MIT",

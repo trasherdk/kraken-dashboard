@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Card, CardBody, CardHeader, Col, Table } from "reactstrap";
 import isEmpty from "../../helpers/is-empty";
-import unixTime from "../../helpers/time";
+//import unixTime from "../../helpers/time";
+import localTime from "../../helpers/localtime";
 import SpinnerSquare from "../Spinners/SpinnerSquare";
 
 import "spinkit/css/spinkit.css";
@@ -9,7 +10,7 @@ import "spinkit/css/spinkit.css";
 function DataListRow(props) {
   const data = props.dataTrades;
   let price = parseFloat(data[0]).toFixed(props.decimals);
-  let date = unixTime(data[2], false);
+  let date = localTime(data[2], false);
   let buy = "";
   let sell = "";
   let limit = "";

@@ -8,7 +8,8 @@ import {
   //Button
 } from "reactstrap";
 import isEmpty from "../../helpers/is-empty";
-import unixTime from "../../helpers/time";
+//import unixTime from "../../helpers/time";
+import localTime from "../../helpers/localtime";
 import SpinnerSquare from "../Spinners/SpinnerSquare";
 // import { cancelOrder } from "../../actions/privateUserTradingActions";
 
@@ -16,7 +17,7 @@ import "spinkit/css/spinkit.css";
 
 function DataListRow(props) {
   const { info, orderID } = props.data;
-  let opentm = unixTime(info.opentm);
+  let opentm = localTime(info.opentm);
   let buy = "";
   let sell = "";
   let limit = "";
