@@ -4,9 +4,9 @@
   "description": "kraken dashboard",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "PORT=5000 node app.js",
     "dev": "nodemon app.js",
-    "client": "npm start --prefix client",
+    "client": "PORT=5001 npm start --prefix client",
     "react": "concurrently \"X_IP_ADDRESS=192.168.1.70 PORT=5000 npm start\" \"PORT=5001 npm run client\""
   },
   "author": "Miguel Medeiros",
