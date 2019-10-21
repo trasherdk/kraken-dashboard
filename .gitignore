@@ -28,6 +28,6 @@ typings/
 .env
 
 # Keep keys secret
-keys.js
+config/keys.js
 
 .vscode
