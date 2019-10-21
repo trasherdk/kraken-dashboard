@@ -16,5 +16,5 @@ app.use("/api/privateUserData", privateUserData);
 app.use("/api/privateUserTrading", privateUserTrading);
 
 const port = parseInt(process.env.PORT, 10) || 5000;
-const ipaddr=process.env.IP_ADDRESS || "0.0.0.0"
+const ipaddr=process.env.IP_ADDRESS || "0.0.0.0";
 app.listen(port, ipaddr, () => console.log(`server running on ${ipaddr} port ${port}`));
