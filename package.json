@@ -12,12 +12,12 @@
   "author": "Miguel Medeiros",
   "license": "MIT",
   "dependencies": {
-    "concurrently": "^4.1.2",
+    "concurrently": "^5.3.0",
     "express": "^4.17.1",
     "kraken-api": "^1.0.0",
     "validator": "^10.11.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.4"
+    "nodemon": "^2.0.4"
   }
 }
