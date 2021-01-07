@@ -15,7 +15,7 @@
     "@coreui/coreui-pro": "^2.1.16",
     "@coreui/icons": "^0.2.0",
     "@coreui/react": "^2.5.4",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "axios-cancel": "^0.2.2",
     "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
